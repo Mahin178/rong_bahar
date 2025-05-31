@@ -16,21 +16,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
-
+    <!-- Parallax Background -->
+    <div class="parallax-bg"></div>
+    <div class="parallax-overlay"></div>
 
     <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="logo.png" alt="Rong Bahar">
+                    <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g52b8ab31927bfab383a810a62a2238101faaae8926dd23bb854e617463ac6f4f078720e5d1e46f0ea6e3cfa34570dd0043e64556df0e125af7bd19791248913c_640.png" alt="Rong Bahar">
                     Rong Bahar
                 </div>
+
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -51,138 +54,58 @@
         <div class="container">
             <h1 class="section-title">Our Collection</h1>
             
-            <div class="shop-grid">
-                <!-- Filters Sidebar -->
-                <div class="filters">
-                    <form action="#" method="GET">
-                        <div class="filter-group">
-                            <h3>Search</h3>
-                            <div class="search-form">
-                                <input type="search" placeholder="Search products...">
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <h3>Categories</h3>
-                            <ul class="filter-options">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="earrings">
-                                        Top Earrings
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="necklace">
-                                        Necklaces
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="rings">
-                                        Finger Rings
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="nose-pin">
-                                        Nose Pins
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="kundon-tip">
-                                        Kundon Tips
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="hairclip">
-                                        Hairclips
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="bangles">
-                                        Bangles
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="key-ring">
-                                        Key Rings
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="hijab-pin">
-                                        Hijab Pins
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="pocket-mirror">
-                                        Pocket Mirrors
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="category" value="hanging-mirror">
-                                        Hanging Mirrors
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <h3>Price Range</h3>
-                            <div class="price-range">
-                                <input type="number" placeholder="Min" name="price_min">
-                                <span>to</span>
-                                <input type="number" placeholder="Max" name="price_max">
-                            </div>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <h3>Material</h3>
-                            <ul class="filter-options">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="material" value="sheesham">
-                                        Sheesham Wood
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="material" value="teak">
-                                        Teak Wood
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="material" value="bamboo">
-                                        Bamboo
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="material" value="mixed">
-                                        Mixed Wood
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Apply Filters</button>
-                    </form>
+            <!-- Search Bar -->
+            <div class="shop-search-container">
+                <form class="search-form">
+                    <input type="search" id="product-search" placeholder="Search our handcrafted treasures...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <!-- Categories -->
+            <div class="category-nav">
+                <div class="category-scroll">
+                    <div class="category-item active" data-category="all">
+                        <div class="category-icon"><i class="fas fa-th-large"></i></div>
+                        <span>All</span>
+                    </div>
+                    <div class="category-item" data-category="earrings">
+                        <div class="category-icon"><i class="fas fa-gem"></i></div>
+                        <span>Earrings</span>
+                    </div>
+                    <div class="category-item" data-category="necklace">
+                        <div class="category-icon"><i class="fas fa-link"></i></div>
+                        <span>Necklaces</span>
+                    </div>
+                    <div class="category-item" data-category="rings">
+                        <div class="category-icon"><i class="fas fa-circle"></i></div>
+                        <span>Rings</span>
+                    </div>
+                    <div class="category-item" data-category="nose-pin">
+                        <div class="category-icon"><i class="fas fa-dot-circle"></i></div>
+                        <span>Nose Pins</span>
+                    </div>
+                    <div class="category-item" data-category="bangles">
+                        <div class="category-icon"><i class="fas fa-ring"></i></div>
+                        <span>Bangles</span>
+                    </div>
+                    <div class="category-item" data-category="hairclip">
+                        <div class="category-icon"><i class="fas fa-paperclip"></i></div>
+                        <span>Hairclips</span>
+                    </div>
+                    <div class="category-item" data-category="hijab-pin">
+                        <div class="category-icon"><i class="fas fa-map-pin"></i></div>
+                        <span>Hijab Pins</span>
+                    </div>
                 </div>
-                
+            </div>
+            
+            <div class="shop-grid">
                 <!-- Products Grid -->
                 <div class="products-section">
                     <div class="shop-header">
-                        <p>Showing 1-9 of 36 products</p>
-                        <select class="sort-select">
+                        <p>Showing <span id="product-count">9</span> of 36 products</p>
+                        <select class="sort-select" id="sort-products">
                             <option value="default">Default Sorting</option>
                             <option value="price-low">Price: Low to High</option>
                             <option value="price-high">Price: High to Low</option>
@@ -192,12 +115,10 @@
                     </div>
                     
                     <div class="products-container">
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="necklace" data-price="1500">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/gd255c18fff92101795a98d0de4dacd0991ca0024007fc37375a4ccc4bada553dce5574a8790fffca683dc9c32855a7c8c4ca160f9ecc419348761013d93831c0_640.jpg" alt="Handcrafted Wooden Necklace">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">LUXURY</div>
                             </div>
                             <div class="product-info">
                                 <h3>Elegant Wooden Necklace</h3>
@@ -206,12 +127,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="earrings" data-price="800">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g29d43ece983282d0aec84b57aa0e24c75252074b503678b42e1e8725f9f4d97b3a1a1fd51e48f1c80976077444a75a8f_640.jpg" alt="Wooden Earrings Set">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">BESTSELLER</div>
                             </div>
                             <div class="product-info">
                                 <h3>Classic Wooden Earrings</h3>
@@ -220,12 +139,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="rings" data-price="600">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g51a22a5fd0a3730309ba8324808c5f495463e3bfca6ccdf7fe3bc930ea841798cb86415026ef768909434f65a2dc0003_640.jpg" alt="Handcrafted Wooden Ring">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">NEW</div>
                             </div>
                             <div class="product-info">
                                 <h3>Feminine Wooden Ring</h3>
@@ -234,12 +151,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="necklace" data-price="1200">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g966917f03d79a42d52cc48f693b96301a7d75ef0011acc4392c3f13922b49b1c41ecad55db8d3d429e53b99c595789bf6f246406e5b2427388d462c536fc7264_640.jpg" alt="Traditional Pendant">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">HANDCRAFTED</div>
                             </div>
                             <div class="product-info">
                                 <h3>Traditional Heart Pendant</h3>
@@ -248,12 +163,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="necklace" data-price="2000">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g24d282b3f5250e8c2f215b85a5478f38ce11d9717770f071d888d69aa705874746e3df4fb5b7aaa909e87fb63bb6323492d6b5e23dba06e74984085253baa38f_640.jpg" alt="Vintage Watch Pendant">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">PREMIUM</div>
                             </div>
                             <div class="product-info">
                                 <h3>Vintage Watch Pendant</h3>
@@ -262,12 +175,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="bangles" data-price="900">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/gc8c2126073e816814c357f6b6a123979224dd5f3bb408cdbfb23e11918b9fc94ff270c49cec241c676c9a7ef3e668adb_640.jpg" alt="Elegant Wooden Bracelet">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">POPULAR</div>
                             </div>
                             <div class="product-info">
                                 <h3>Elegant Wooden Bracelet</h3>
@@ -276,12 +187,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="hairclip" data-price="700">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/ge1b16767ba96cd681622c8c31d7fe8d4bb79e6a6ec91851f36d6e3e1fde45bcf6d33948f186633aa1d40ff2ce3141c35f526d77cb417ef4ee43f6b014d7d7e3e_640.jpg" alt="Handcrafted Hairclip">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">TRENDING</div>
                             </div>
                             <div class="product-info">
                                 <h3>Wooden Hairclip</h3>
@@ -290,12 +199,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="bangles" data-price="1100">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g4db6da246f2650bde92ff91160590b6807269670e8821dd1980bc65f5990d66f0c5aef8a1cd677e70d3fecdea43b8369fb9b787e9122ff8d4ef757a771c87786_640.jpg" alt="Fashion Jewelry Display">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">LIMITED</div>
                             </div>
                             <div class="product-info">
                                 <h3>Wooden Bangle Set</h3>
@@ -304,12 +211,10 @@
                             </div>
                         </div>
                         
-                        <div class="product-card scroll-animation">
+                        <div class="product-card" data-category="hijab-pin" data-price="550">
                             <div class="product-img">
                                 <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g35ca3573efd2072b4f01bd5d769c9115caa40881a62319eb2bd97baded07229b525de9ff3f995674bc712a46efa99856bfbf3ecc346173487ad5e75401a96aa0_640.jpg" alt="Traditional Hijab Pin">
-                                <div class="return-badge">
-                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
-                                </div>
+                                <div class="product-badge">ELEGANT</div>
                             </div>
                             <div class="product-info">
                                 <h3>Traditional Hijab Pin</h3>
@@ -360,7 +265,7 @@
                     <h3>Customer Service</h3>
                     <ul class="footer-links">
                         <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
                         <li><a href="#">Size Guide</a></li>
                         <li><a href="#">Care Instructions</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -392,5 +297,102 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile category menu toggle
+            const mobileCategoryMenu = document.querySelector('.mobile-category-menu');
+            const categoryNav = document.querySelector('.category-nav');
+            
+            if (mobileCategoryMenu) {
+                mobileCategoryMenu.addEventListener('click', function() {
+                    categoryNav.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+            
+            // Category filtering functionality
+            const categoryItems = document.querySelectorAll('.category-item');
+            const productCards = document.querySelectorAll('.product-card');
+            const productSearch = document.getElementById('product-search');
+            const productCount = document.getElementById('product-count');
+            const sortSelect = document.getElementById('sort-products');
+            
+            // Add click event to category items
+            categoryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all categories
+                    categoryItems.forEach(cat => cat.classList.remove('active'));
+                    
+                    // Add active class to clicked category
+                    this.classList.add('active');
+                    
+                    // Get selected category
+                    const selectedCategory = this.dataset.category;
+                    
+                    // Filter products
+                    filterProducts(selectedCategory, productSearch.value);
+                });
+            });
+            
+            // Function to filter products
+            function filterProducts(category = 'all', searchTerm = '') {
+                searchTerm = searchTerm.toLowerCase();
+                
+                let visibleCount = 0;
+                
+                productCards.forEach(card => {
+                    const productName = card.querySelector('h3').textContent.toLowerCase();
+                    const productCategory = card.dataset.category;
+                    
+                    const matchesSearch = productName.includes(searchTerm);
+                    const matchesCategory = category === 'all' || productCategory === category;
+                    
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                if (productCount) {
+                    productCount.textContent = visibleCount;
+                }
+            }
+            
+            // Search functionality
+            productSearch.addEventListener('input', function() {
+                const activeCategory = document.querySelector('.category-item.active');
+                const category = activeCategory ? activeCategory.dataset.category : 'all';
+                
+                filterProducts(category, this.value);
+            });
+            
+            // Function to sort products
+            function sortProducts() {
+                const sortBy = sortSelect.value;
+                const productsContainer = document.querySelector('.products-container');
+                const productsArray = Array.from(productCards);
+                
+                if (sortBy === 'price-low') {
+                    productsArray.sort((a, b) => 
+                        parseFloat(a.dataset.price) - parseFloat(b.dataset.price)
+                    );
+                } else if (sortBy === 'price-high') {
+                    productsArray.sort((a, b) => 
+                        parseFloat(b.dataset.price) - parseFloat(a.dataset.price)
+                    );
+                }
+                
+                // Re-append sorted products
+                productsArray.forEach(product => {
+                    productsContainer.appendChild(product);
+                });
+            }
+            
+            // Sort select event
+            sortSelect.addEventListener('change', sortProducts);
+        });
+    </script>
 </body>
 </html>
