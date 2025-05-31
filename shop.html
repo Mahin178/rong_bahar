@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Rong Bahar</title>
+    <meta name="description" content="Shop our collection of handcrafted wooden jewelry. Find earrings, necklaces, rings, and more.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 7 Day Return Guarantee -->
+    <div class="return-guarantee">
+        <div class="return-guarantee-content">
+            <i class="fas fa-exchange-alt"></i>
+            <p>Easy 7-Day Return Guarantee on All Products</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g52b8ab31927bfab383a810a62a2238101faaae8926dd23bb854e617463ac6f4f078720e5d1e46f0ea6e3cfa34570dd0043e64556df0e125af7bd19791248913c_640.png" alt="Rong Bahar">
+                    Rong Bahar
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-counter">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <div class="container">
+            <h1 class="section-title">Our Collection</h1>
+            
+            <div class="shop-grid">
+                <!-- Filters Sidebar -->
+                <div class="filters">
+                    <form action="#" method="GET">
+                        <div class="filter-group">
+                            <h3>Search</h3>
+                            <div class="search-form">
+                                <input type="search" placeholder="Search products...">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h3>Categories</h3>
+                            <ul class="filter-options">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="earrings">
+                                        Top Earrings
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="necklace">
+                                        Necklaces
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="rings">
+                                        Finger Rings
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="nose-pin">
+                                        Nose Pins
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="kundon-tip">
+                                        Kundon Tips
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="hairclip">
+                                        Hairclips
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="bangles">
+                                        Bangles
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="key-ring">
+                                        Key Rings
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="hijab-pin">
+                                        Hijab Pins
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="pocket-mirror">
+                                        Pocket Mirrors
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="hanging-mirror">
+                                        Hanging Mirrors
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h3>Price Range</h3>
+                            <div class="price-range">
+                                <input type="number" placeholder="Min" name="price_min">
+                                <span>to</span>
+                                <input type="number" placeholder="Max" name="price_max">
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h3>Material</h3>
+                            <ul class="filter-options">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="material" value="sheesham">
+                                        Sheesham Wood
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="material" value="teak">
+                                        Teak Wood
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="material" value="bamboo">
+                                        Bamboo
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="material" value="mixed">
+                                        Mixed Wood
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Apply Filters</button>
+                    </form>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="products-section">
+                    <div class="shop-header">
+                        <p>Showing 1-9 of 36 products</p>
+                        <select class="sort-select">
+                            <option value="default">Default Sorting</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                            <option value="popularity">Popularity</option>
+                        </select>
+                    </div>
+                    
+                    <div class="products-container">
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/gd255c18fff92101795a98d0de4dacd0991ca0024007fc37375a4ccc4bada553dce5574a8790fffca683dc9c32855a7c8c4ca160f9ecc419348761013d93831c0_640.jpg" alt="Handcrafted Wooden Necklace">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Elegant Wooden Necklace</h3>
+                                <p class="price">৳1,500</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g29d43ece983282d0aec84b57aa0e24c75252074b503678b42e1e8725f9f4d97b3a1a1fd51e48f1c80976077444a75a8f_640.jpg" alt="Wooden Earrings Set">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Classic Wooden Earrings</h3>
+                                <p class="price">৳800</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g51a22a5fd0a3730309ba8324808c5f495463e3bfca6ccdf7fe3bc930ea841798cb86415026ef768909434f65a2dc0003_640.jpg" alt="Handcrafted Wooden Ring">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Feminine Wooden Ring</h3>
+                                <p class="price">৳600</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g966917f03d79a42d52cc48f693b96301a7d75ef0011acc4392c3f13922b49b1c41ecad55db8d3d429e53b99c595789bf6f246406e5b2427388d462c536fc7264_640.jpg" alt="Traditional Pendant">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Traditional Heart Pendant</h3>
+                                <p class="price">৳1,200</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g24d282b3f5250e8c2f215b85a5478f38ce11d9717770f071d888d69aa705874746e3df4fb5b7aaa909e87fb63bb6323492d6b5e23dba06e74984085253baa38f_640.jpg" alt="Vintage Watch Pendant">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Vintage Watch Pendant</h3>
+                                <p class="price">৳2,000</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/gc8c2126073e816814c357f6b6a123979224dd5f3bb408cdbfb23e11918b9fc94ff270c49cec241c676c9a7ef3e668adb_640.jpg" alt="Elegant Wooden Bracelet">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Elegant Wooden Bracelet</h3>
+                                <p class="price">৳900</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/ge1b16767ba96cd681622c8c31d7fe8d4bb79e6a6ec91851f36d6e3e1fde45bcf6d33948f186633aa1d40ff2ce3141c35f526d77cb417ef4ee43f6b014d7d7e3e_640.jpg" alt="Handcrafted Hairclip">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Wooden Hairclip</h3>
+                                <p class="price">৳700</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g4db6da246f2650bde92ff91160590b6807269670e8821dd1980bc65f5990d66f0c5aef8a1cd677e70d3fecdea43b8369fb9b787e9122ff8d4ef757a771c87786_640.jpg" alt="Fashion Jewelry Display">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Wooden Bangle Set</h3>
+                                <p class="price">৳1,100</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card scroll-animation">
+                            <div class="product-img">
+                                <img src="https://public.youware.com/users-website-assets/prod/731b2400-480b-48a9-8301-8aba60279444/g35ca3573efd2072b4f01bd5d769c9115caa40881a62319eb2bd97baded07229b525de9ff3f995674bc712a46efa99856bfbf3ecc346173487ad5e75401a96aa0_640.jpg" alt="Traditional Hijab Pin">
+                                <div class="return-badge">
+                                    <i class="fas fa-exchange-alt"></i> 7-Day Return
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Traditional Hijab Pin</h3>
+                                <p class="price">৳550</p>
+                                <a href="product-detail.html" class="btn add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="pagination">
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Rong Bahar</h3>
+                    <p>Handcrafted wooden jewelry from Bangladesh. Where tradition meets elegance.</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="order-tracking.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+                        <li><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@rongbahar.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rong Bahar. All rights reserved. Made with ❤️ in Bangladesh.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8801XXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
